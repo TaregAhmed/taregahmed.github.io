@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة غذاؤنا دواؤنا التنموية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>مؤسسة غذاؤنا دواؤنا التنموية</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#projects">مشاريعنا</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>مؤسسة تهدف إلى تحقيق الأمن الغذائي من خلال مشاريع مستدامة.</p>
+    </section>
+
+    <section id="projects">
+        <h2>مشاريعنا</h2>
+        <article>
+            <h3>مشروع السلة الغذائية</h3>
+            <p>توزيع سلات غذائية للأسر المحتاجة.</p>
+        </article>
+        <article>
+            <h3>دعم المزارعين</h3>
+            <p>تحفيز الزراعة المحلية لتحقيق الاكتفاء الذاتي.</p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <form action="contact.php" method="post">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 مؤسسة غذاؤنا دواؤنا التنموية</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/your_facebook_page" target="_blank">
+                <img src="facebook-icon.png" alt="فيسبوك">
+            </a>
+            <a href="https://twitter.com/your_twitter_handle" target="_blank">
+                <img src="twitter-icon.png" alt="تويتر">
+            </a>
+            <a href="https://www.instagram.com/your_instagram_handle" target="_blank">
+                <img src="instagram-icon.png" alt="إنستغرام">
+            </a>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/967123456789" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-icon.png" alt="واتساب">
+    </a>
+</body>
+</html>
