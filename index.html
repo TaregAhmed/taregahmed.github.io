@@ -1,70 +1,414 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مؤسسة غذاؤنا دواؤنا التنموية</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>مؤسسة غذاؤنا دواؤنا التنموية</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#projects">مشاريعنا</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
-            </ul>
-        </nav>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مؤسسة غذاؤنا دواؤنا التنموي</title>
+    <meta name="description" content="مؤسسة غذاؤنا دواؤنا التنموية رائدة في مجال صناعة الأدوية والمستحضرات الطبية بمعايير جودة عالمية" />
+    <meta name="author" content=" مؤسسة غذاؤنا دواؤنا التنموية" />
+
+    <meta property="og:title" content="مؤسسة غذاؤنا دواؤنا التنموية"/>
+    <meta property="og:description" content="شركة رائدة في مجال صناعة الأدوية والمستحضرات الطبية بمعايير جودة عالمية" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shifaa_pharma" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- قسم الهيدر الرئيسي -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>مؤسسة غذاؤنا دواؤنا التنموية</h1>
+            <p>نلتزم بتطوير وإنتاج أدوية مبتكرة وعالية الجودة لتحسين حياة المرضى حول العالم</p>
+            <div class="hero-buttons">
+              <a href="#products" class="btn btn-primary"><i class="fas fa-plus-circle"></i> تعرف على منتجاتنا</a>
+              <a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> تواصل معنا</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2069&auto=format&fit=crop" alt="معامل الأبحاث الدوائية">
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <section id="about">
-        <h2>من نحن</h2>
-        <p>مؤسسة تهدف إلى تحقيق الأمن الغذائي من خلال مشاريع مستدامة.</p>
-    </section>
-
-    <section id="projects">
-        <h2>مشاريعنا</h2>
-        <article>
-            <h3>مشروع السلة الغذائية</h3>
-            <p>توزيع سلات غذائية للأسر المحتاجة.</p>
-        </article>
-        <article>
-            <h3>دعم المزارعين</h3>
-            <p>تحفيز الزراعة المحلية لتحقيق الاكتفاء الذاتي.</p>
-        </article>
-    </section>
-
-    <section id="contact">
-        <h2>اتصل بنا</h2>
-        <form action="contact.php" method="post">
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">رسالتك:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">إرسال</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 مؤسسة غذاؤنا دواؤنا التنموية</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/your_facebook_page" target="_blank">
-                <img src="facebook-icon.png" alt="فيسبوك">
-            </a>
-            <a href="https://twitter.com/your_twitter_handle" target="_blank">
-                <img src="twitter-icon.png" alt="تويتر">
-            </a>
-            <a href="https://www.instagram.com/your_instagram_handle" target="_blank">
-                <img src="instagram-icon.png" alt="إنستغرام">
-            </a>
+    <!-- قسم المميزات -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>لماذا مؤسسة غذاؤنا دواؤنا التنموية؟</h2>
+          <p>نحن مؤسسة رائدة في مجال الصناعات الدوائية ملتزمة بأعلى معايير الجودة والابتكار</p>
         </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <h3>أبحاث متطورة</h3>
+            <p>نستثمر في البحث والتطوير لإنتاج أدوية مبتكرة</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <h3>جودة عالمية</h3>
+            <p>نلتزم بأعلى معايير الجودة في جميع منتجاتنا</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>فريق متخصص</h3>
+            <p>يعمل لدينا نخبة من العلماء والخبراء في مجال الأدوية</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>ابتكار مستمر</h3>
+            <p>نطور حلولاً دوائية مبتكرة لتلبية احتياجات المرضى</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>منتجاتنا الرئيسية</h2>
+          <p>اكتشف مجموعتنا الواسعة من المنتجات الدوائية المبتكرة والعالية الجودة</p>
+        </div>
+
+        <div class="tabs">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" data-tab="category1">أدوية القلب</button>
+            <button class="tab-btn" data-tab="category2">المضادات الحيوية</button>
+            <button class="tab-btn" data-tab="category3">أدوية المناعة</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-content active" id="category1">
+              <div class="products-grid">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2069&auto=format&fit=crop" alt="دواء 1-1">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 1-1</h3>
+                    <p>وصف مختصر للمنتج الدوائي 1-1</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 250 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578496480157-697fc14d2e55?q=80&w=2070&auto=format&fit=crop" alt="دواء 1-2">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 1-2</h3>
+                    <p>وصف مختصر للمنتج الدوائي 1-2</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 350 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2070&auto=format&fit=crop" alt="دواء 1-3">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 1-3</h3>
+                    <p>وصف مختصر للمنتج الدوائي 1-3</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 400 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="category2">
+              <div class="products-grid">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?q=80&w=2069&auto=format&fit=crop" alt="دواء 2-1">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 2-1</h3>
+                    <p>وصف مختصر للمنتج الدوائي 2-1</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 150 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2069&auto=format&fit=crop" alt="دواء 2-2">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 2-2</h3>
+                    <p>وصف مختصر للمنتج الدوائي 2-2</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 220 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80" alt="دواء 2-3">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 2-3</h3>
+                    <p>وصف مختصر للمنتج الدوائي 2-3</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 300 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="category3">
+              <div class="products-grid">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80" alt="دواء 3-1">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 3-1</h3>
+                    <p>وصف مختصر للمنتج الدوائي 3-1</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 500 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2070&auto=format&fit=crop" alt="دواء 3-2">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 3-2</h3>
+                    <p>وصف مختصر للمنتج الدوائي 3-2</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 180 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?q=80&w=2069&auto=format&fit=crop" alt="دواء 3-3">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-sm">التفاصيل</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>منتج 3-3</h3>
+                    <p>وصف مختصر للمنتج الدوائي 3-3</p>
+                    <div class="product-meta">
+                      <span><i class="fas fa-flask"></i> 280 ملغ</span>
+                      <a href="#" class="product-link">عرض التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>تواصل معنا</h2>
+          <p>هل لديك استفسارات أو ترغب في معرفة المزيد عن منتجاتنا؟ فريقنا متاح للإجابة على جميع أسئلتك</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <form action="contact.php" method="POST" id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">الرسالة</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>العنوان</h3>
+                <p>شارع الصناعة، المنطقة الصناعية</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>رقم الهاتف</h3>
+                <p>1234-567-800</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>البريد الإلكتروني</h3>
+                <p>info@shifaa-pharma.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>ساعات العمل</h3>
+                <p>الأحد - الخميس: 8:00 صباحاً - 4:00 مساءً</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>شركة الشفاء</h3>
+            <p>شركة رائدة في مجال صناعة الأدوية والمستحضرات الطبية بمعايير جودة عالمية</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <h3>روابط سريعة</h3>
+            <ul>
+              <li><a href="#">الرئيسية</a></li>
+              <li><a href="#features">عن الشركة</a></li>
+              <li><a href="#products">منتجاتنا</a></li>
+              <li><a href="#">البحث والتطوير</a></li>
+              <li><a href="#">الوظائف</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h3>تواصل معنا</h3>
+            <address>
+              <p><i class="fas fa-map-marker-alt"></i> شارع الصناعة، المنطقة الصناعية</p>
+              <p><i class="fas fa-phone"></i> هاتف: 1234-567-800</p>
+              <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@shifaa-pharma.com</p>
+            </address>
+          </div>
+          
+          <div class="footer-newsletter">
+            <h3>النشرة الإخبارية</h3>
+            <p>اشترك في نشرتنا الإخبارية للحصول على آخر الأخبار والتحديثات</p>
+            <form action="subscribe.php" method="POST" class="newsletter-form">
+              <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+              <button type="submit" class="btn">اشترك الآن</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© <span id="currentYear"></span> مؤسسة غذاؤنا دواؤنا التنموية للصناعات الدوائية. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
     </footer>
 
-    <a href="https://wa.me/967123456789" class="whatsapp-button" target="_blank">
-        <img src="whatsapp-icon.png" alt="واتساب">
-    </a>
-</body>
+    <!-- صفحة 404 في ملف منفصل -->
+
+    <!-- كود JavaScript الرئيسي -->
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

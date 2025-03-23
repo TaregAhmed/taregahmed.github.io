@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منتجاتنا الدوائية</title>
+    <title>المنتجات</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>منتجاتنا الدوائية</h1>
+        <div class="logo">
+            <h1>مؤسسة الأدوية</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">الرئيسية</a></li>
                 <li><a href="about.html">من نحن</a></li>
-                <li><a href="services.html">خدماتنا</a></li>
-                <li><a href="products.html">منتجاتنا</a></li>
+                <li><a href="products.html">المنتجات</a></li>
                 <li><a href="contact.html">اتصل بنا</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="filters">
-        <label for="product-category">اختر فئة المنتج:</label>
-        <select id="product-category" onchange="filterProducts()">
-            <option value="">الكل</option>
-            <option value="أدوية">أدوية</option>
-            <option value="مستلزمات طبية">مستلزمات طبية</option>
-        </select>
-    </section>
-
-    <section id="products">
-        <div class="product" data-category="أدوية">
-            <img src="images/product1.jpg" alt="دواء 1">
-            <h3>دواء 1</h3>
-            <p>وصف المنتج 1</p>
+    <main>
+        <h2>منتجاتنا</h2>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="product1.jpg" alt="منتج 1">
+                <p>وصف المنتج 1</p>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="منتج 2">
+                <p>وصف المنتج 2</p>
+            </div>
         </div>
-        <div class="product" data-category="مستلزمات طبية">
-            <img src="images/product2.jpg" alt="منتج 2">
-            <h3>منتج 2</h3>
-            <p>وصف المنتج 2</p>
-        </div>
-        <div class="product" data-category="أدوية">
-            <img src="images/product3.jpg" alt="دواء 3">
-            <h3>دواء 3</h3>
-            <p>وصف المنتج 3</p>
-        </div>
-    </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 مؤسسة غذاؤنا دواؤنا التنموية</p>
+        <p>&copy; 2025 مؤسسة الأدوية. جميع الحقوق محفوظة.</p>
     </footer>
 </body>
 </html>
